@@ -1,10 +1,22 @@
-import "./BoardField.css";
-import Hit from "assets/Hit.png";
+import { useSetRecoilState } from "recoil";
+import { boardState } from "recoil/atoms";
 import Miss from "assets/Miss.png";
+import Hit from "assets/Hit.png";
 
-const BoardField = ({ type }) => {
+import "./BoardField.css";
+
+const BoardField = ({ type, rowIndex, fieldIndex }) => {
+  const setBoard = useSetRecoilState(boardState);
+
   const onFire = () => {
-    console.log("FIRE!");
+    setBoard((board) => {
+      const arrayCopy = [...board.map((row) => [...row])];
+      arrayCopy[rowIndex][fieldIndex] = {
+        ...arrayCopy[rowIndex][fieldIndex],
+        type: arrayCopy[rowIndex][fieldIndex].id !== null ? "hit" : "miss",
+      };
+      return arrayCopy;
+    });
   };
 
   const filedImage = () => {
