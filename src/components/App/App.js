@@ -13,8 +13,7 @@ const App = () => {
     resetBoard();
     resetShipsState();
   };
-  console.log(COUNT_TOTAL);
-  //console.log(killedCounter);
+
   return COUNT_TOTAL !== killedCounter ? (
     <Game />
   ) : (
