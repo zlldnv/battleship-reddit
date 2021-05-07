@@ -1,0 +1,11 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.shipName {
+  text-transform: capitalize;
+  padding: 8px;
+  font-size: 30px;
+}

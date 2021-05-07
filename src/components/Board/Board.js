@@ -1,7 +1,6 @@
-import React from "react";
 import { useRecoilValue } from "recoil";
-import { boardState } from "../../recoil/atoms";
-import BoardRow from "../BoardRow/BoardRow";
+import { boardState } from "recoil/atoms";
+import BoardRow from "components/BoardRow/BoardRow";
 import "./Board.css";
 
 const Board = () => {
