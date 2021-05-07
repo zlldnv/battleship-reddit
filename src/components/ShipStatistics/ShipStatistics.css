@@ -9,3 +9,22 @@
   padding: 8px;
   font-size: 30px;
 }
+
+@media screen and (max-width: 900px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .shipName {
+    font-size: 20px;
+    padding: 0px 8px;
+  }
+
+  .card {
+    display: flex;
+    padding: 0 16px;
+    flex-direction: row;
+  }
+}

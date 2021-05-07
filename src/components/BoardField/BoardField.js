@@ -33,7 +33,7 @@ const BoardField = ({ id, type, rowIndex, fieldIndex }) => {
     }
   };
 
-  const filedImage = () => {
+  const fieldImage = (() => {
     if (type === "hit") {
       return Hit;
     }
@@ -41,12 +41,12 @@ const BoardField = ({ id, type, rowIndex, fieldIndex }) => {
     if (type === "miss") {
       return Miss;
     }
-  };
+  })();
 
   return (
     <div className="field" onClick={onFire}>
-      {filedImage() && (
-        <img className="fieldImage" src={filedImage()} alt="fieldImage" />
+      {fieldImage && (
+        <img className="fieldImage" src={fieldImage} alt="fieldImage" />
       )}
     </div>
   );

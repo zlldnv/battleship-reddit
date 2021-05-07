@@ -24,3 +24,16 @@
 .counterText {
   border-top: 1px solid black;
 }
+
+@media screen and (max-width: 500px) {
+  .counterWrapper {
+    height: 70px;
+    width: 100px;
+    padding: 8px;
+    font-size: 30px;
+  }
+
+  .counterContainer {
+    width: 50vw;
+  }
+}

@@ -6,3 +6,19 @@
   max-width: 1300px;
   align-items: center;
 }
+
+@media screen and (max-width: 900px) {
+  .game {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+}
