@@ -1,0 +1,26 @@
+.counterContainer {
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 16px;
+  font-size: 24px;
+}
+
+.first {
+  background-color: #fda109;
+}
+
+.second {
+  background-color: #25b79f;
+}
+
+.counter {
+  font-size: 110%;
+}
+
+.counterText {
+  border-top: 1px solid black;
+}

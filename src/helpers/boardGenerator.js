@@ -1,12 +1,13 @@
 import shipLayout from "data";
+import { BOARD_SIZE } from "consts";
 
 const { layout, shipTypes } = shipLayout;
 
 const parseLayout = (layout) => {
   const ships = [];
-  const boardSchema = new Array(10)
+  const boardSchema = new Array(BOARD_SIZE)
     .fill(null)
-    .map(() => new Array(10).fill({ id: null, type: "notTouched" }));
+    .map(() => new Array(BOARD_SIZE).fill({ id: null, type: "notTouched" }));
 
   let COUNT_TOTAL = 0;
 
