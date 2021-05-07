@@ -1,5 +1,7 @@
+import Game from "components/Game/Game";
+
 const App = () => {
-  return <div>Battleship</div>;
+  return <Game />;
 };
 
 export default App;
