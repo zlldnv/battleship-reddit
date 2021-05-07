@@ -12,7 +12,7 @@ const parseLayout = (layout) => {
   let COUNT_TOTAL = 0;
 
   layout.forEach((layoutItem, index) => {
-    COUNT_TOTAL = COUNT_TOTAL + layoutItem.positions.length;
+    COUNT_TOTAL = COUNT_TOTAL + 1;
     layoutItem.positions.forEach(([x, y]) => {
       boardSchema[x][y] = {
         ...boardSchema[x][y],
